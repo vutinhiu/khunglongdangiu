@@ -14,7 +14,45 @@
     <link rel="stylesheet" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/memories.css" />
   </head>
-
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 120%;
+      height: auto;
+      text-align: center;
+    }
+    div.gallery1 {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery1:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery1 img {
+      width: 160%;
+      height: auto;
+      text-align: center;
+    }
+    
+    div.desc {
+      padding-top: 60px;
+      text-align: left;
+    }
+    </style>
   <body>
     <div style="display: none">
       <iframe
@@ -28,7 +66,7 @@
       ></iframe>
     </div>
     <div class="bgcolor">
-      <div style="z-index: 100" id="dowebok"class="gallery">
+      <div style="z-index: 100" id="dowebok">
         <div class="section">
           <div class="ly-box01">
             <div class="ly-txt01">
@@ -43,8 +81,10 @@
             </div>
             <div class="ly-txt02">
               <p class="ly-stxt02">
-              <img width="600" height="400" src="img/kiniem.jpg" alt="" >
-
+                <div class="gallery1">
+                    <img src="img/kiniem.jpg" width="2000" height="900">
+                 
+                </div>
                 
               </p>
               
@@ -53,183 +93,486 @@
         </div>
 
 
-        <div class="section">
+        <!-- <div class="section">
           <div class="timeline"></div>
           <div class="timepoint11"></div>
-          <div class="ly-box11">
-            <div class="ly-txt11">14/02/2023</div>
-            <div class="ly-txt12">Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳</div>
-            <div class="ly-imgbox11">
-              <img class="ly-img11 width:100%" src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" />
-              <img class="ly-img11" src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" />
-            </div>
-          </div>
-          <div class="ly-triangle11"></div>
-
-          <div class="ly-box12">
-            <div class="ly-txt13"></div>
-            <div class="ly-txt14">
-              <p>Lần đầu gặp nên ngại quá chả dám nắm tay đồ 🤣🤣 </p>
-              <div class="ly-imgbox11">
-                <img class="ly-img11" src="img/IMG_5720.PNG" />
-              </div>
-            </div>
-          </div>
-          <div class="ly-triangle12"></div>
-        </div>
-
-
-        <div class="section">
-          <div class="timeline"></div>
-          <div class="timepoint21"></div>
           <div class="ly-box21">
             <div class="ly-txt21">14/02/2023</div>
-            <div class="ly-txt22">
-              <p>Cuộc hẹn hò đâu tiên chính thức khi mình yêu nhau hehe </p>
-            </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/46c7b443294babcd8ee5583a0f3778df.jpg" />
-              <img class="ly-img21" src="img/317c37a1981ba7a66271060756a8dd34.jpg" />
+            <div class="desc">Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳</div>
+            <div class="gallery"style="text-align: center;">
+              <img src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" alt="Cinque Terre" />
             </div>
           </div>
           <div class="ly-triangle21"></div>
-
-          <div class="ly-box22">
-            <div class="ly-txt23">18/02/2023</div>
-            <div class="ly-txt24">
-              <p>Úi giời ơi buổi thứ 3 đã thơm người ta dồiii </p>
-            </div>
-            <div class="ly-imgbox22">
-              <img class="ly-img22" src="img/5bc9e3d90c80b0440ab4913874c4e45d.jpg" />
-              <img class="ly-img22" src="img/317c37a1981ba7a66271060756a8dd34.jpg" />
-            </div>
-          </div>
-          <div class="ly-triangle22"></div>
-
-          <div class="ly-box23">
-            <div class="ly-txt25"></div>
-            <div class="ly-txt26">
-              <p>Dồi luôn gông cổ người ta </p>
-            </div>
-            <div class="ly-imgbox23">
-              <img class="ly-img23" src="img/FD2FAD60-245D-4ECF-9478-56FB772E0D4F.jpg" />
-              <img class="ly-img23" src="img/IMG_5870.JPG" />
-              <img class="ly-img23" src="img/IMG_5865.JPG" />
-            </div>
-          </div>
-          <div class="ly-triangle23"></div>
-        </div>
-
-        <div class="section">
-          <div class="timeline"></div>
-          <div class="timepoint31"></div>
-          <div class="ly-box31">
-            <div class="ly-txt31"></div>
-            <div class="ly-txt32">
-              <p>Quá trời nuônnnnn</p>
-            </div>
-            <div class="ly-imgbox31">
-              <img class="ly-img31" src="img/IMG_5882.JPG" />
-              <img class="ly-img31" src="img/IMG_5883.JPG" />
-            </div>
-          </div>
-          <div class="ly-triangle31"></div>
-
-          <div class="ly-box32">
-            <div class="ly-txt33"></div>
-            <div class="ly-txt34">
-              <p>Uấy uầy uâyyyyy ai đêiii mà lấc cấc vạii😌😌</p>
-            </div>
-            <div class="ly-imgbox31">
-              <img class="ly-img31" src="img/5c3c3d97cbe3f82805fa6e08c2850517.jpg" />
-              <img class="ly-img31" src="img/IMG_5936.JPG" />
-            </div>
-          </div>
-          <div class="ly-triangle32"></div>
-        </div>
-        <div class="section">
-          <div class="timeline"></div>
-          <div class="timepoint21"></div>
-          <div class="ly-box52">
-            <div class="ly-txt21">24/02/2023</div>
-            <div class="ly-txt22">
-             <p>Chớt lại hẹn hò HT nữa dồi 👉👈</p>
-            </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/IMG_5987.JPG" />
-              <img class="ly-img21" src="img/IMG_5992.JPG" />
-              <img class="ly-img21" src="img/IMG_5998.JPG" />
+          <div class="ly-box21">
+            <div class="ly-txt21">14/02/2023</div>
+            <div class="desc">Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳</div>
+            <div class="gallery"style="text-align: center;">
+              <img src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" alt="Cinque Terre" />
             </div>
           </div>
           <div class="ly-triangle21"></div>
 
           <div class="ly-box22">
             <div class="ly-txt23"></div>
-            <div class="ly-txt51">
-              <p>Ủa ủa ai đêiii 🙃🙃🙃</p>
+            <div class="ly-txt24">
+              <div class="gallery" style="text-align: center;">
+                <div class="desc">Chụp ảnh ngại quá đồ 😛😛 </div>
+                <img src="img/IMG_5720.PNG" alt="Cinque Terre" >
+              </div>
+              <!-- <p>Lần đầu gặp nên ngại quá chả dám nắm tay đồ 🤣🤣 </p>
+              <!-- <div class="ly-imgbox11">
+                <img class="ly-img11" src="img/IMG_5720.PNG" />
+              </div> --> -->
+              
+            <!-- </div>
+          </div>
+          <div class="ly-triangle22"></div>
+          <div class="ly-box11">
+            <div class="ly-txt11"></div>
+            <div class="ly-txt12">Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳</div>
+            <div class="ly-imgbox11">
+              <img class="ly-img11" src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" width="200" height="400"/>
             </div>
-            <div class="ly-imgbox22">
-              <img class="ly-img22" src="img/IMG_6004.JPG" />
-              <img class="ly-img22" src="img/IMG_6026.JPG" />
-              <img class="ly-img22" src="img/IMG_6021.JPG" />
-              <img class="ly-img22" src="img/IMG_6018.JPG" />
+          </div>
+          
+          <div class="ly-box23">
+            <div class="ly-txt25"></div>
+            <div class="desc">Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳</div>
+            <div class="gallery"style="text-align: center;">
+              <img src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" alt="Cinque Terre" />
+            </div>
+          </div>
+          <div class="ly-triangle23"></div>
+        </div>  -->
+        <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint71"></div>
+          <div class="ly-box21 xx71">
+            <div class="ly-txt21">04/02/2023</div>
+            <div class="desc">
+              <p> Cuộc bắt cóc của Vũ Tiến Hiệu đã bắt đầu 😳😳
+               </p>
+            </div>
+            <div class="gallery">
+              <img src="img/B0569FEE-250A-4364-B58F-5A75170B92B1.jpg" />
+            
+            </div>
+          
+          </div>
+          <div class="ly-triangle21 xx72"></div>
+
+          <div class="ly-box71">
+            <div class="ly-txt23"></div>
+            <!-- <div class="ly-txt71">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <p class="desc"> Chụp ảnh ngại quá đồ 😛😛</p>
+            <div class="gallery">
+              <img src="img/IMG_5720.PNG" />
             </div>
           </div>
           <div class="ly-triangle22"></div>
 
-          <div class="ly-box51">
-            <div class="ly-txt25">Cái miệng lấc cấc nịnh ác gớm mà còn vẫn hư đó nha 🙄🙄</div>
-            <div class="ly-txt26">
+          <div class="ly-box72">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt72">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <div class="ly-imgbox72">
+              <p class="desc"> Chụp ảnh ngại quá đồ 😛😛</p>
+            <div class="gallery">
+              <img src="img/DB877854-CDB1-4CDC-99B9-9F3C62FBF341.jpg" />
             </div>
-            <div class="ly-imgbox23">
-              <img class="ly-img23" src="img/IMG_5804.PNG" />
-              <img class="ly-img23" src="img/IMG_5936.JPG" />
-              <img class="ly-img23" src="img/IMG_5830.JPG" />
-              <img class="ly-img23" src="img/IMG_6321.JPG" />
-              <img class="ly-img23" src="img/IMG_6291.JPG" />
-              <img class="ly-img23" src="img/IMG_6259.JPG" />
-              <img class="ly-img23" src="img/IMG_6272.JPG" />
-              <img class="ly-img23" src="img/IMG_6290.JPG" />
             </div>
           </div>
-          <div class="ly-triangle23"></div>
+          <div class="ly-triangle71"></div>
+
+          <div class="ly-box73">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt73">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+          <div >
+            <div class="ly-imgbox72">
+              <p class="desc"> Chụp ảnh ngại quá đồ 😛😛</p>
+            <div class="gallery">
+              <img src="img/DB877854-CDB1-4CDC-99B9-9F3C62FBF341.jpg" />
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="ly-triangle72"></div>
         </div>
+<!--  -->
         <div class="section">
           <div class="timeline"></div>
-          <div class="timepoint21"></div>
-          <div class="ly-box21">
-            <div class="ly-txt21"></div>
-            <div class="ly-txt22">
-              <p> Ai đêii ta 🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣
-              </p>
+          <div class="timepoint71"></div>
+          <div class="ly-box21 xx71">
+            <div class="ly-txt21">14/02/2023</div>
+            <div class="desc">
+              <p> Cuộc hẹn hò đâu tiên chính thức khi mình yêu nhau hehe 
+               </p>
             </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/IMG_7453.JPG" />
-              <img class="ly-img21" src="img/IMG_7454.JPG" />
-              <img class="ly-img21" src="img/IMG_7452.JPG" />
-            </div>
-          </div>
-          <div class="ly-triangle21"></div>
-
-          <div class="ly-box22">
+            <div class="gallery">
+              <img src="img/46c7b443294babcd8ee5583a0f3778df.jpg"  />
             
-            <div class="ly-imgbox22">
-              <img class="ly-img21" src="img/9-11-2020.2.jpg" />
-              <img class="ly-img21" src="img/9-11-2020.2.jpg" />
+            </div>
+          
+          </div>
+          <div class="ly-triangle21 xx72"></div>
+
+          <div class="ly-box71">
+            <div class="ly-txt23"></div>
+            <!-- <div class="ly-txt71">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <p class="desc"> </p>
+            <div class="gallery">
+              <img src="img/317c37a1981ba7a66271060756a8dd34.jpg" />
             </div>
           </div>
-          <div class="ly-triangle22">
-            <img class="ly-img21" src="img/9-11-2020.3.jpg" />
-          </div>
+          <div class="ly-triangle22"></div>
 
-          <div class="ly-box23">
-            <div class="ly-imgbox61">
+          <div class="ly-box72">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt72">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <div class="ly-imgbox72">
+              <div class="ly-txt21">18/02/2023</div>
+              <div class="desc">
+<p> Nụ thơm đầu tiên </p>               
+              </div>
+            <div class="gallery">
+              <img src="img/IMG_5855.JPG"  />
+            </div>
+            </div>
+          </div>
+          <div class="ly-triangle71"></div>
+
+          <div class="ly-box73">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt73">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+          <div >
+            <div class="ly-imgbox72">
+              <p class="desc"> Dồi luôn gông cổ người ta</p>
+            <div class="gallery">
+              <img src="img/IMG_5870.JPG" />
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="ly-triangle72"></div>
+        </div>
+<!-- 2 -->
+<div class="section">
+  <div class="timeline"></div>
+  <div class="timepoint71"></div>
+  <div class="ly-box21 xx71">
+    <div class="ly-txt21"></div>
+    <div class="desc">
+      <p> Quá trời nuônnnnn
+       </p>
+    </div>
+    <div class="gallery">
+      <img src="img/IMG_5882.JPG"  />
+    
+    </div>
+  
+  </div>
+  <div class="ly-triangle21 xx72"></div>
+
+  <div class="ly-box71">
+    <div class="ly-txt23"></div>
+    <!-- <div class="ly-txt71">
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+    </div> -->
+    <p class="desc"> </p>
+    <div class="gallery">
+      <img src="img/IMG_5883.JPG" />
+    </div>
+  </div>
+  <div class="ly-triangle22"></div>
+
+  <div class="ly-box72">
+    <!-- <div class="ly-txt25">201X-0X-1X</div>
+    <div class="ly-txt72">
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+    </div> -->
+    <div class="ly-imgbox72">
+      <div class="ly-txt21"></div>
+      <div class="desc">
+<p> Ái chà chà nắm tay đồ  </p>               
+      </div>
+    <div class="gallery">
+      <img src="img/a3970d55b755d3e1dfdd618ed91377e3.jpg"  />
+    </div>
+    </div>
+  </div>
+  <div class="ly-triangle71"></div>
+
+  <div class="ly-box73">
+    <!-- <div class="ly-txt25">201X-0X-1X</div>
+    <div class="ly-txt73">
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+      <p>XXXXXXXXXXXXXX</p>
+    </div> -->
+  <div >
+    <div class="ly-imgbox72">
+      <p class="desc"> Thả tay ra tym nè </p>
+    <div class="gallery">
+      <img src="img/IMG_6026.JPG" />
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="ly-triangle72"></div>
+</div>
+        <!-- 3 -->
+        <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint71"></div>
+          <div class="ly-box21 xx71">
+            <div class="ly-txt21"></div>
+            <div class="desc">
+              <p> Lấc cấc mà nịnh cũng giỏi nhỉ Trang</p>
+            </div>
+            <div class="gallery">
+              <img src="img/5c3c3d97cbe3f82805fa6e08c2850517.jpg"  />
              
             </div>
+          
           </div>
-          <div class="ly-triangle23"></div>
-        </div>
+          <div class="ly-triangle21 xx72"></div>
 
+          <div class="ly-box71">
+            <div class="ly-txt23"></div>
+            <!-- <div class="ly-txt71">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <p class="desc"> </p>
+            <div class="gallery">
+              <img src="img/IMG_6291.PNG"  />
+              <img src="img/IMG_5936.JPG"  />
+              <img src="img/CC458FCC-26D2-4AA8-B361-0F747A18A442.jpg"  />
+            </div>
+          </div>
+          <div class="ly-triangle22"></div>
+
+          <div class="ly-box72">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt72">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <div class="ly-imgbox72">
+              <div class="ly-txt21"></div>
+              <div class="desc">
+                <p>  </p>               
+              </div>
+            <div class="gallery">
+              <img src="img/IMG_1630.jpg"  />
+              <img src="img/IMG_1638.jpg"  />
+
+            </div>
+            </div>
+          </div>
+          <div class="ly-triangle71"></div>
+
+          <div class="ly-box73">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt73">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+          <div >
+            <div class="ly-imgbox72">
+              <p class="desc"> </p>
+            <div class="gallery">
+              <img src="img/IMG_6321.PNG" />
+              <img src="img/IMG_6790.PNG" />
+              <img src="img/IMG_6183.PNG" />
+
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="ly-triangle72"></div>
+        </div>
+        <!--  -->
+        <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint71"></div>
+          <div class="ly-box21 xx71">
+            <div class="ly-txt21">=</div>
+            <div class="desc">
+              <p> Ai đêii ta 🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣</p>
+            </div>
+            <div class="gallery">
+              <img src="img/IMG_7453.JPG" />
+            </div>
+          
+          </div>
+          <div class="ly-triangle21 xx72"></div>
+
+          <div class="ly-box71">
+            <div class="ly-txt23"></div>
+            <!-- <div class="ly-txt71">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <p class="desc"> </p>
+            <div class="gallery">
+              <img src="img/IMG_7454.JPG" />
+            </div>
+          </div>
+          <div class="ly-triangle22"></div>
+
+          <div class="ly-box72">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt72">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <div class="ly-imgbox72">
+              <div class="ly-txt21"></div>
+              <div class="desc">
+                <p>  </p>               
+              </div>
+            <div class="gallery">
+              <img  src="img/IMG_7452.JPG" />
+            </div>
+            </div>
+          </div>
+          <div class="ly-triangle71"></div>
+
+          <div class="ly-box73">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt73">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+          <div >
+            <div class="ly-imgbox72">
+              <p class="desc">Ủa ủa ai đêiii 🙃🙃🙃 </p>
+            <div class="gallery">
+              <img src="img/IMG_6004.JPG" />
+
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="ly-triangle72"></div>
+        </div>
+        <!--  -->
+        <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint71"></div>
+          <div class="ly-box21 xx71">
+            <div class="ly-txt21"></div>
+            <div class="desc">
+              <p> Ỏ đẹp trai quáaaaa</p>
+            </div>
+            <div class="gallery">
+              <img src="img/IMG_3138.HEIC"  />
+            </div>
+          
+          </div>
+          <div class="ly-triangle21 xx72"></div>
+        
+          <div class="ly-box71">
+            <div class="ly-txt23"></div>
+            <!-- <div class="ly-txt71">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <p class="desc"> Ôm đăng sau thít quáaaa </p>
+            <div class="gallery">
+              <img src="img/IMG_6030.JPG"  />
+            </div>
+          </div>
+          <div class="ly-triangle22"></div>
+        
+          <div class="ly-box72">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt72">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+            <div class="ly-imgbox72">
+              <div class="ly-txt21"></div>
+              <div class="desc">
+                <p>  </p>               
+              </div>
+            <div class="gallery">
+              <img src="img/A5E57BDB-D36E-4B52-9DB4-C2FD1DD2DB54.jpg"  />
+        
+            </div>
+            </div>
+          </div>
+          <div class="ly-triangle71"></div>
+        
+          <div class="ly-box73">
+            <!-- <div class="ly-txt25">201X-0X-1X</div>
+            <div class="ly-txt73">
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+              <p>XXXXXXXXXXXXXX</p>
+            </div> -->
+          <div >
+            <div class="ly-imgbox72">
+              <p class="desc"> Mẹ Trang và đứa con lớn xác :>>>>> </p>
+            <div class="gallery">
+              <img src="img/5310c665cbc63ae3b358b28cdb706910.jpg" />
+        
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="ly-triangle72"></div>
+        </div>
+<!--  -->
         <div class="section">
           <div class="timeline"></div>
           <div class="timepoint71"></div>
@@ -240,21 +583,9 @@
                 Ngoan hơn , yêu anh hơn nhaaaa 💞💞💞💞💞💞
                </p>
             </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/351468244_614840913921423_1820295622707696858_n.jpg" />
-            
-            </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/370600088_207051792352622_2508661466256644144_n.jpg" />
-            
-            </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/370731789_627433292561961_4386370424871866285_n.jpg" />
-            
-            </div>
-            <div class="ly-imgbox21">
-              <img class="ly-img21" src="img/351543800_970037794011030_4807449417276395583_n.jpg" />
-            
+            <div class="gallery">
+              <img  src="img/370620979_1796513267485614_945815091768843483_n.jpg" />
+
             </div>
           </div>
           <div class="ly-triangle21 xx72"></div>
@@ -269,8 +600,8 @@
               <p>XXXXXXXXXXXXXX</p>
             </div> -->
             <p>  Chúc em ngày sinh nhật thật vui vẻ. Anh yêu em Bé Khủng Long của anh 😘😘💗💓 Hãy viết tiếp nha iemm</p>
-            <div class="ly-imgbox71">
-              <img class="ly-img71" src="img/368683742_1046906989639655_6820137626483662144_n.jpg" />
+            <div class="gallery">
+              <img  src="img/8B5CAB1C-3165-4867-910E-BC2BF3D98939.jpg" />
             </div>
           </div>
           <div class="ly-triangle22"></div>
@@ -282,8 +613,10 @@
               <p>XXXXXXXXXXXXXX</p>
               <p>XXXXXXXXXXXXXX</p>
             </div> -->
-            <div class="ly-imgbox72">
-              <img class="ly-img72" src="img/" />
+            <p>  Hãy luôn cười thật tươi nhaaaaa</p>
+            <div class="gallery">
+             
+              <img class="ly-img72" src="img/888937246437ce491052084bce20ae48.JPG" />
             </div>
           </div>
           <div class="ly-triangle71"></div>
@@ -301,12 +634,12 @@
               </a>
           </div>
             <div class="ly-imgbox73">
-              <img class="ly-img73" src="img/" />
+              <img class="ly-img73" src="img/025a164a9e3723656b0cb554d07d9cc3.JPG" />
             </div>
           </div>
           <div class="ly-triangle72"></div>
         </div>
-
+<!--  -->
       </div>
    
       <ul class="bg-bubbles">
